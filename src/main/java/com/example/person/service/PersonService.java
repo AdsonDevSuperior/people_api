@@ -24,4 +24,8 @@ public class PersonService {
                 .message("Created person with id" + savedPerson.getId())
                 .build();
     }
+
+    public void listAll() {
+        personRepository.findAll();
+    }
 }

@@ -19,6 +19,11 @@ public class PersonController {
         this.personService = personService;
     }
 
+    @GetMapping
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void searchPerson() {
+        personService.listAll();
+    }
     //usando message dto build.build da pra inserir argumentos dentro como uma mensagem a ser exibida
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
