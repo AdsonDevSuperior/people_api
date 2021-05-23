@@ -6,9 +6,9 @@ import com.example.person.enums.PhoneType;
 
 public class PhoneUtils {
 
-    private static final String PHONE_NUMBER = "8198956-9845";
+    private static final String PHONE_NUMBER = "1199999-9999";
     private static final PhoneType PHONE_TYPE = PhoneType.MOBILE;
-    private static final Long PHONE_ID = 1L;
+    private static final long PHONE_ID = 1L;
 
     public static PhoneDTO createFakeDTO() {
         return PhoneDTO.builder()
@@ -18,10 +18,10 @@ public class PhoneUtils {
     }
 
     public static Phone createFakeEntity() {
-       return Phone.builder()
-               .id(PHONE_ID)
-               .number(PHONE_NUMBER)
-               .type(PHONE_TYPE)
-               .build();
+        return Phone.builder()
+                .id(PHONE_ID)
+                .number(PHONE_NUMBER)
+                .type(PHONE_TYPE)
+                .build();
     }
 }

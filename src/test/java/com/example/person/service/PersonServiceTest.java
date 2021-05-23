@@ -21,12 +21,8 @@ public class PersonServiceTest {
     @Mock
     private PersonRepository personRepository;
 
-    //injeta o mock dentro de service
-
     @InjectMocks
     private PersonService personService;
-
-    //em testGivenPersonDTOThenReturnSavedMessage em run test gine mostra as linhas agetadas pelos testes
 
     @Test
     void testGivenPersonDTOThenReturnSavedMessage() {

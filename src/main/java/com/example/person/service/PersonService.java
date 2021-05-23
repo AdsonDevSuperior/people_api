@@ -3,17 +3,15 @@ package com.example.person.service;
 import com.example.person.dto.request.PersonDTO;
 import com.example.person.dto.response.MessageResponseDTO;
 import com.example.person.entity.Person;
+
 import com.example.person.exception.PersonNotFoundException;
 import com.example.person.mapper.PersonMapper;
 import com.example.person.repository.PersonRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
-import java.awt.color.ProfileDataException;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service

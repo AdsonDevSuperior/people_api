@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/people")
+@RequestMapping("/api/people")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonController {
 
