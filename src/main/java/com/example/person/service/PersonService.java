@@ -9,6 +9,7 @@ import com.example.person.repository.PersonRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.awt.color.ProfileDataException;
 import java.util.List;
@@ -44,5 +45,14 @@ public class PersonService {
         Person person = personRepository.findById(id)
         .orElseThrow(() -> new PersonNotFoundException(id));
         return personMapper.toDTO(person);
+    }
+
+    public void deleteId(Long id) throws PersonNotFoundException{
+       verifyIfExists(id);
+        personRepository.deleteById(id);
+    }
+    private Person verifyIfExists(Long id) throws PersonNotFoundException {
+        return personRepository.findById(id)
+                .orElseThrow(() -> new PersonNotFoundException(id));
     }
 }
