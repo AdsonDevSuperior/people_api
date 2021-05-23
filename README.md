@@ -1,4 +1,4 @@
-<h2>Desenvolvendo um sistema para gestão de pessoas de uma empresa através de uma API Rest.<h>
+<h2>Desenvolvendo um sistema para gestão de pessoas de uma empresa através de uma API Rest.</h2>
 
 vamos desenvolver um pequeno sistema para o gerenciamento de pessoas de uma empresa através de uma API REST, criada com o Spring Boot.
 
